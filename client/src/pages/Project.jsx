@@ -25,7 +25,7 @@ function Project() {
           <p>{data.project.description}</p>
           <h5>Project status:</h5>
           <p className="lead">{data.project.status}</p>
-          {/* <ClientInfo client={data.project.client} /> */}
+          <ClientInfo client={data.project.client} />
 
           <EditProjectForm project={data.project} />
           <DeleteProjectButton projectId={data.project.id} />

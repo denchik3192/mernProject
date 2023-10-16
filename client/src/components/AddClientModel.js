@@ -88,10 +88,9 @@ function AddClientModel() {
                     value={phone}
                     onChange={(e) => setPhone(e.target.value)}></input>
                 </div>
-                <button
-                  type="submit"
-                  className="btn btn-secondary"
-                  data-bs-dismiss="modal"></button>
+                <button type="submit" className="btn btn-secondary" data-bs-dismiss="modal">
+                  Add
+                </button>
               </form>
             </div>
           </div>

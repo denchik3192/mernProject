@@ -1,7 +1,6 @@
-import React from 'react';
-import { FaEnvelope, FaIdBadge, FaPhone } from 'react-icons/fa';
+import { FaEnvelope, FaPhone, FaIdBadge } from 'react-icons/fa';
 
-function ClientInfo({ client }) {
+export default function ClientInfo({ client }) {
   return (
     <>
       <h5 className="mt-5">Client Information</h5>
@@ -19,5 +18,3 @@ function ClientInfo({ client }) {
     </>
   );
 }
-
-export default ClientInfo;

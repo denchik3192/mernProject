@@ -27,8 +27,10 @@ function EditProjectForm({ project }) {
           <input
             type="text"
             className="form-control"
+            id="name"
             value={name}
-            onChange={(e) => setName(e.target.value)}></input>
+            onChange={(e) => setName(e.target.value)}
+          />
         </div>
         <div className="mb-3">
           <label className="form-label">Description</label>
@@ -36,20 +38,23 @@ function EditProjectForm({ project }) {
             className="form-control"
             id="description"
             value={description}
-            onChange={(e) => setDescription(e.target.value)}
-          />
+            onChange={(e) => setDescription(e.target.value)}></textarea>
         </div>
         <div className="mb-3">
           <label className="form-label">Status</label>
-          <select className="form-select" id="status" onChange={(e) => setStatus(e.target.value)}>
-            <option value="new"> Not Started</option>
-            <option value="progress"> In Progress</option>
-            <option value="completed"> Completed</option>
+          <select
+            id="status"
+            className="form-select"
+            value={status}
+            onChange={(e) => setStatus(e.target.value)}>
+            <option value="new">Not Started</option>
+            <option value="progress">In Progress</option>
+            <option value="completed">Completed</option>
           </select>
         </div>
 
-        <button type="submit" className="btn btn-primary" data-bs-dismiss="modal">
-          Save
+        <button type="submit" className="btn btn-primary">
+          Submit
         </button>
       </form>
     </div>
